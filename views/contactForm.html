@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
   </head>
-  <body>
+  <body
+    link="#123fff"
+    background="../assets/Acrylic.jpg"
+    style="color: aliceblue;"
+  >
     <div><a href="../index.html">Home</a></div>
     <div>
       Bienvenido a la pagina de Contacto!!!
     </div>
     <div>
       -Acá va el FOrmulario de contacto-
-      <form action="mailto:email" method="POST" enctype="TEXT/PLAIN"></form>
+      <form action="/submit">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" required />
+
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </body>
 </html>
